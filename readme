@@ -1,0 +1,36 @@
+Name
+
+File::ReadPE
+
+Description
+
+File::ReadPE - Perl module to read/parse Windows PE file structures without using the Win32 API.  This allows
+for Win32 image (ie, malware) analysis on any platform that supports Perl.  This module retrieves relative
+portions of the following structures:
+
+IMAGE_DOS_HEADER
+IMAGE_FILE_HEADER
+IMAGE_NT_HEADER
+IMAGE_OPTIONAL_HEADER(32)
+IMAGE_DATA_DIRECTORY
+IMAGE_SECTION_HEADER
+
+The module also contains several functions to perform translation of 'characteristics' values from the
+various structures.
+
+SYNOPSIS
+
+Included in the POD
+
+DEPENDENCIES
+
+None
+
+INSTALLATION
+
+Plop the .pm file in the appropriate directory.  On Windows systems, this would be 
+C:\Perl\site\lib\File.
+
+AUTHOR
+
+Copyright 2006, H. Carvey <keydet89 at yahoo dot com>
